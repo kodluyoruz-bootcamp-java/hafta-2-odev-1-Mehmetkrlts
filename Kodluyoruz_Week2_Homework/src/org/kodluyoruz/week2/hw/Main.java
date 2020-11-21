@@ -1,5 +1,7 @@
 package org.kodluyoruz.week2.hw;
 
+import org.kodluyoruz.week2.hw.interfaces.IKeyboard;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,7 +21,7 @@ public class Main {
             int selectedPhoneBrand = scan.nextInt();
 
             if(selectedPhoneBrand == 1 ){
-                KeyBoard nonTouchKeyboard = new NonTouchKeyboard();
+                IKeyboard nonTouchKeyboard = new NonTouchKeyboard();
                 Samsung samsung = new Samsung("M.O3000","0000001","V1.5",8192,
                         6.5,false , nonTouchKeyboard);
                 samsung.openPhone();
@@ -27,7 +29,7 @@ public class Main {
 
             }
             else if (selectedPhoneBrand == 2) {
-                KeyBoard touchKeyboard = new TouchKeyboard();
+                IKeyboard touchKeyboard = new TouchKeyboard();
                 Apple apple = new Apple("Iphone11" , "0000000","V1.0",4096 ,
                         5.5 ,false , touchKeyboard);
                 apple.openPhone();

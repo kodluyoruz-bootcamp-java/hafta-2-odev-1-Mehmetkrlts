@@ -1,8 +1,10 @@
 package org.kodluyoruz.week2.hw;
 
+import org.kodluyoruz.week2.hw.interfaces.IKeyboard;
+
 public class Apple extends Phone {
     public Apple(String model, String imeiNumber, String versionNumber, int memory,
-                 double screenSize, boolean phoneIsOn ,KeyBoard keyBoard) {
+                 double screenSize, boolean phoneIsOn , IKeyboard keyBoard) {
         super(model, imeiNumber, versionNumber, memory, screenSize, phoneIsOn, keyBoard);
     }
 

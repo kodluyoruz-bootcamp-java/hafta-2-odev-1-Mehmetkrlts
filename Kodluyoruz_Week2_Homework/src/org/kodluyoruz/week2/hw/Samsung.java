@@ -1,7 +1,9 @@
 package org.kodluyoruz.week2.hw;
 
+import org.kodluyoruz.week2.hw.interfaces.IKeyboard;
+
 public class Samsung extends Phone {
-    public Samsung(String model, String imeiNumber, String versionNumber, int memory, double screenSize, boolean phoneIsOn , KeyBoard keyboard) {
+    public Samsung(String model, String imeiNumber, String versionNumber, int memory, double screenSize, boolean phoneIsOn , IKeyboard keyboard) {
         super(model, imeiNumber, versionNumber, memory, screenSize, phoneIsOn , keyboard);
     }
 

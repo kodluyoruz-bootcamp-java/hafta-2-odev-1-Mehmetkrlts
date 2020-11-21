@@ -1,5 +1,7 @@
 package org.kodluyoruz.week2.hw;
 
+import org.kodluyoruz.week2.hw.interfaces.IKeyboard;
+
 public class Phone {
     private String model;
     private String imeiNumber;
@@ -7,9 +9,9 @@ public class Phone {
     private int memory;
     private double screenSize;
     private boolean phoneIsOn;
-    private KeyBoard keyboard;
+    private IKeyboard keyboard;
 
-    public Phone(String model, String imeiNumber, String versionNumber, int memory, double screenSize, boolean phoneIsOn , KeyBoard keyboard) {
+    public Phone(String model, String imeiNumber, String versionNumber, int memory, double screenSize, boolean phoneIsOn , IKeyboard keyboard) {
         this.model = model;
         this.imeiNumber = imeiNumber;
         this.versionNumber = versionNumber;
